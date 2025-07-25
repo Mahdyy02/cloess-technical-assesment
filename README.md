@@ -1,6 +1,6 @@
 # 🛍️ CLOESS - Tunisian Fashion E-commerce Platform
 
-A modern e-commerce platform for Tunisian fashion featuring an AI-powered chatbot assistant, invisible analytics tracking, and a responsive React frontend with FastAPI backend.
+A modern e-commerce platform for Tunisian fashion featuring an **AI Agent** assistant, invisible analytics tracking, and a responsive React frontend with FastAPI backend.
 
 ## 🌟 Features
 
