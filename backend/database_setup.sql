@@ -1,0 +1,3 @@
+-- This file has been moved to ../database_complete_setup.sql
+-- Please use the root level database_complete_setup.sql for the complete database setup
+-- It includes all three tables: products, user_sessions, and product_interactions

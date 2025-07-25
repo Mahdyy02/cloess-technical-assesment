@@ -1,0 +1,7 @@
+fastapi
+httpx
+uvicorn
+psycopg2-binary
+asyncpg
+pydantic
+python-dotenv 
