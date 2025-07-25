@@ -4,7 +4,7 @@ A modern e-commerce platform for Tunisian fashion featuring an AI-powered chatbo
 
 ## 🌟 Features
 
-- **🤖 AI Chatbot Assistant**: OpenRouter-powered chatbot for customer support
+- **🤖 AI Agent Assistant**: LLM-powered AI Agent for customer support
 - **📊 Invisible Analytics**: Real-time user behavior tracking without visible UI counters
 - **🛍️ Product Catalog**: Dynamic product browsing with categories and search
 - **🌍 Geolocation Tracking**: IP-based user location analytics
