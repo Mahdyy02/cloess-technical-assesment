@@ -1,0 +1,210 @@
+html, body {
+  overflow-x: hidden;
+}
+
+.cloess-landing-root {
+  width: 100vw;
+  min-height: 100vh;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+.cloess-hero-section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.cloess-hero-gif {
+  position: absolute;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.cloess-hero-logo {
+  font-family: 'Playfair Display', sherif;
+  font-size: 7vw;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  background: linear-gradient(92deg, #FFD700 0%, #FFF8DC 30%, #FFEF8A 50%, #FFD700 70%, #BFA046 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+  color: #FFD700;
+  text-shadow:
+    0 2px 12px rgba(191, 160, 70, 0.35),
+    0 0 8px #fff8dc,
+    0 0 16px #ffd700,
+    0 1px 0 #fff8dc;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transform-origin: center center;
+  z-index: 2;
+  background: none;
+  padding: 0;
+  box-shadow: none;
+  border-radius: 0;
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1), font-size 0.3s, background 0.3s, box-shadow 0.3s, padding 0.3s;
+}
+
+.cloess-sticky-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #111;
+  background: #fff;
+  border-radius: 0 0 1em 1em;
+  padding: 0.2em 2em 0.3em 2em;
+  box-shadow: 0 2px 12px 2px rgba(0,0,0,0.10), 0 0 24px #fff8dc;
+  position: fixed;
+  top: 0; left: 50%;
+  transform: translateX(-50%) translateY(-100%);
+  z-index: 10;
+  opacity: 0;
+  pointer-events: none;
+  text-shadow: 0 1px 0 #fff, 0 2px 8px rgba(0,0,0,0.07);
+  transition: opacity 0.4s, transform 0.4s, font-size 0.3s, background 0.3s, box-shadow 0.3s, padding 0.3s, color 0.3s, font-family 0.3s;
+}
+.cloess-sticky-logo.visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+
+.cloess-product-grid-section {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: #fff;
+  padding-top: 4rem;
+  overflow-x: hidden;
+}
+
+.cloess-product-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  max-width: 900px;
+  flex-wrap: wrap;
+}
+
+.cloess-product-card {
+  background: #fff;
+  border-radius: 1.2em;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 1.5rem 1rem 2rem 1rem;
+  flex: 1 1 0;
+  min-width: 200px;
+  max-width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+.cloess-product-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+}
+
+.cloess-product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 0.7em;
+  margin-bottom: 1rem;
+}
+
+.cloess-product-card h3 {
+  margin: 0.5rem 0 0.2rem 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.cloess-product-card p {
+  margin: 0 0 1rem 0;
+  color: #666;
+  font-size: 1rem;
+}
+
+.cloess-product-card button {
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 0.5em;
+  padding: 0.6em 1.5em;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.cloess-product-card button:hover {
+  background: #bfa46d;
+  color: #222;
+}
+
+/* Loading and Error States */
+.loading-spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  color: #666;
+}
+
+.loading-spinner p {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.error-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: #dc3545;
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 0.5rem;
+  margin: 2rem;
+}
+
+.error-message p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Product Description */
+.product-description {
+  font-size: 0.85rem !important;
+  color: #888 !important;
+  line-height: 1.4;
+  margin: 0.5rem 0 !important;
+  height: 2.8rem;
+  overflow: hidden;
+  display: -webkit-box;
+  /* -webkit-line-clamp: 2; */
+  -webkit-box-orient: vertical;
+}
+
+/* Animations */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+} 
